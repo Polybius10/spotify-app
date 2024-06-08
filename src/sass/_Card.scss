@@ -1,0 +1,75 @@
+// Un parshall que no se compila en el CSS. Es como una extensión.
+
+@use 'Var';
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 600px;
+    height: 120px;
+
+    .album {
+        width: 120px;
+        aspect-ratio: 1/1;
+        margin-left: 4px;
+        cursor: pointer;
+    }
+    .song-data{
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        text-align: start;
+        justify-content: center;
+        text-overflow: clip;
+
+        .title-song{
+            font-size: 1.6rem;
+            cursor:pointer;
+            &::hover {
+                text-decoration: underline 1px solid Var.$primary-color;
+            }
+        }
+
+        .artist{
+            font-size: 1.4rem;
+            color: Var.$tertiary-color;
+        }
+    }
+    .play{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .play-redirect {
+        display: flex;
+        margin-right: 8px;
+        justify-content: center;
+        align-self: center;
+        cursor: pointer;
+        color: transparent;
+        outline: none;
+    }
+    .play-button {
+        padding: 11px 24px;
+        margin-bottom: 4px;
+        background-color: Var.$secondary-color;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-size: 1.2rem;
+        color: white;
+        border-radius: 50px;
+        border: 1px solid white;
+        outline: none;
+        cursor: pointer;
+    }
+    .duration {
+        display: flex;
+        color: Var.$tertiary-color;
+    }
+
+  }

@@ -1,0 +1,19 @@
+// Llamar a los parshals
+@use 'Reset';
+@use 'SearchFormulary';
+@use 'main-section';
+@use 'Card';
+@use 'Var';
+
+
+html {
+  font-size: 62.5%;
+  width: 100%;
+  background-color: Var.$background;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+
+
+
